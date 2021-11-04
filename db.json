@@ -1,0 +1,21 @@
+{
+    "bg": "https://cdn.wallpapersafari.com/88/71/4o70qx.jpg",
+    "title": "Titulo do quiz",
+    "description": "Descrição do seu quiz aqui",
+    "questions":[
+    ],
+    "external":[
+    ],
+    "themes": {
+        "colors":{
+        "primary": "#4CAF50",
+        "secondary": "#FF9800",
+        "mainBg":"#1C1814",
+        "contrastText":"#FFFFFF",
+        "wrong":"#FF8722",
+        "success":"#4CAF50"
+        },
+        "borderRadius": "4px"
+    }
+}
+    
