@@ -29,11 +29,16 @@ export const QuizContainer = styled.div`
     padding: 15px;
     }
 `;
-export default function Home() {
-  const router = useRouter();
-  const [name, setName] = React.useState('');
-  return (
-    <QuizBackground backgroundImage={db.bg}>
+
+
+
+
+
+export default function QuizPage(){
+    const router = useRouter();
+    const [name, setName] = React.useState('');
+    return(
+        <QuizBackground backgroundImage={db.bg}>
       <Head>
       <title>Alura Quiz - PW</title>
       </Head>
@@ -50,18 +55,15 @@ export default function Home() {
               router.push(`/quiz?name=${name}`)
               console.log('submit do react')
             }}>
-              <p>Lorem ipsum sit dolor amet...</p>
-              
-              <InputBase placeholder="escreva seu nome" onChange={function (infosDoEvento){
-                // console.log(infosDoEvento.target.value);
-                // //State
-                // name = infosDoEvento.target.value;
-                setName(infosDoEvento.target.value)
-              }}/>
-            
-              <ButtonBase type = 'submit' disabled={name.length === 0}>
-              Jogar
-              </ButtonBase>
+            <p>Lorem ipsum sit dolor amet...</p>            
+            <InputBase placeholder="escreva seu nome" onChange={function (infosDoEvento){
+              // console.log(infosDoEvento.target.value);
+              // //State
+              // name = infosDoEvento.target.value;
+              setName(infosDoEvento.target.value)
+            }}/>
+           
+
             </form>
           </Widget.Content>
         </Widget>
@@ -73,5 +75,5 @@ export default function Home() {
       </QuizContainer>
       <GitHubCorner projectUrl = "https://github.com/Guihdiias"/>
     </QuizBackground>
-  )
+    );
 }

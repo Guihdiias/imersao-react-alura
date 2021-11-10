@@ -34,7 +34,7 @@ Widget.Header = styled.header`
 `
 Widget.Content = styled.div`
   padding: 24px 32px 32px 32px ;
-  & > *::last-child{
+  & > *:last-child{
     margin-bottom: 0;
   }
   ul {
